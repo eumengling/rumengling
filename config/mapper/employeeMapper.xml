@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.iotek.ssm.dao.EmployeeDao">
+	<insert id="insertEmployee" parameterType="Employee">
+		INSERT INTO 
+			employees(name,email,birth,create_time,lesson_id) 
+		VALUES
+			(#{name},#{email},#{birth},#{createTime},#{lesson.id})
+	</insert>
+	
+	<select id="queryAllEmployees" resultType="Employee">
+		SELECT 
+			e.id,e.name,e.email,e.birth,e.create_time,
+			d.id "department.id",d.name "department.name"  
+		FROM 
+			employees e,departments d 
+		WHERE 
+			e.department_id=d.id 
+		ORDER BY 
+			e.id
+	</select>
+	
+	<delete id="deleteEmployeeById" parameterType="int">
+		DELETE FROM EMPLOYEES WHERE ID = #{id}
+	</delete>
+	
+	<select id="queryEmployeeById" resultType="Employee">
+		SELECT 
+			e.id,e.name,e.email,e.birth,e.create_time,
+			d.id "department.id",d.name "department.name"  
+		FROM 
+			employees e,departments d 
+		WHERE 
+			e.department_id=d.id 
+		AND 
+			e.id = #{id}
+	</select>
+	
+	<update id="updateEmployee" parameterType="Employee">
+		UPDATE 
+			EMPLOYEES 
+		SET 
+			name = #{name},
+			email = #{email},
+			birth = #{birth},
+			department_id = #{department.id} 
+		WHERE 
+			id=#{id}
+	</update>
+	
+	
+	<select id="queryEmployeeByName" resultType="Employee">
+		SELECT 
+			e.id,e.name,e.email,e.birth,e.create_time,
+			d.id "department.id",d.name "department.name"  
+		FROM 
+			employees e,departments d 
+		WHERE 
+			e.department_id=d.id 
+		AND 
+			e.name = #{name}
+	</select>
+</mapper>
+
+
+
+
+
