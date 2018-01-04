@@ -8,6 +8,12 @@ public interface TrainingDao {
 
 	//≈‡—µ
 	public List<Training> queryAllTrainings();
+	
+	public List<Training> queryTrainingByDepartment(int deptId);
+	
+	public List<Training> queryTrainingByPosition(int deptId,int posId);
+	
+	public List<Training> queryTrainingByUserId(int deptId,int posId,int userId);
 		
 	public int insertTraining(Training training);
 		

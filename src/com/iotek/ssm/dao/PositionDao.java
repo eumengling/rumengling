@@ -9,10 +9,12 @@ public interface PositionDao {
 	//ְλ
 	public List<Position> queryAllPositions();
 	
-	public int insertPosition(Position posi);
+	public Position queryPositionById(int posId);
+	
+	public int insertPosition(Position pos);
 	
 	public int deletePosition(int id);
 	
-	public int updatePosition(Position posi);
+	public int updatePosition(Position pos);
 	
 }

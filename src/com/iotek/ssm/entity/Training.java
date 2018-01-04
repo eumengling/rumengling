@@ -3,8 +3,8 @@ package com.iotek.ssm.entity;
 public class Training {
 
 	private int id;//培训
-	private String department;//部门
-	private String position;//职位
+	private Department department;//部门
+	private Position position;//职位
 	private int user_id;
 	private String item;//培训项目
 	private String time;
@@ -14,7 +14,8 @@ public class Training {
 		super();
 	}
 
-	public Training(int id, String department, String position, int user_id, String item, String time, String address) {
+	public Training(int id, Department department, Position position, int user_id, String item, String time,
+			String address) {
 		super();
 		this.id = id;
 		this.department = department;
@@ -33,19 +34,19 @@ public class Training {
 		this.id = id;
 	}
 
-	public String getDepartment() {
+	public Department getDepartment() {
 		return department;
 	}
 
-	public void setDepartment(String department) {
+	public void setDepartment(Department department) {
 		this.department = department;
 	}
 
-	public String getPosition() {
+	public Position getPosition() {
 		return position;
 	}
 
-	public void setPosition(String position) {
+	public void setPosition(Position position) {
 		this.position = position;
 	}
 

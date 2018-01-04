@@ -9,5 +9,7 @@ public interface ResumeDao {
 	public int insertResume(Resume resume);
 	
 	public int updateResume(Resume resume);
+	
+	public int deleteResume(int id);
 
 }

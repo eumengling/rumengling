@@ -8,15 +8,18 @@ public class Position {
 	private String name;
 	private Date createtime;
 	
+	private Department department;
+	
 	public Position() {
 		super();
 	}
 
-	public Position(int id, String name, Date createtime) {
+	public Position(int id, String name, Date createtime, Department department) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.createtime = createtime;
+		this.department = department;
 	}
 
 	public int getId() {
@@ -43,8 +46,17 @@ public class Position {
 		this.createtime = createtime;
 	}
 
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
 	public String toString() {
-		return "Position [id=" + id + ", name=" + name + ", createtime=" + createtime + "]";
+		return "Position [id=" + id + ", name=" + name + ", createtime=" + createtime + ", department=" + department
+				+ "]";
 	}
 	
 }

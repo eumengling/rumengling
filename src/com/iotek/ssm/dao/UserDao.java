@@ -16,7 +16,7 @@ public interface UserDao {
 	
 	public int updateUser(User user);
 	
-	public User queryUserByName(String nickname);
+	public List<User> queryUserByName(String name);//真名可重复
 	
 	public User queryUserByNickname(String nickname);
 	

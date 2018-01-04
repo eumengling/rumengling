@@ -13,4 +13,6 @@ public interface OppositionDao {
 	
 	public int updateOpposition(Opposition opp);
 	
+	public int deleteOpposition(int id);
+	
 }

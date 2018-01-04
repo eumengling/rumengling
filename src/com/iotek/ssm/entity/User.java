@@ -13,8 +13,8 @@ public class User {
 	private String degree;//学位
 	private String tel;
 	private String email;
-	private String department;//部门
-	private String position;//职位
+	private Department department;//部门
+	private Position position;//职位
 	private String political_status;//政治面貌
 	private Date hiredate;//入职时间
 	private String hobby;//爱好
@@ -26,8 +26,8 @@ public class User {
 	}
 
 	public User(int id, String nickname, String name, String password, String sex, int age, String degree, String tel,
-			String email, String department, String position, String political_status, Date hiredate, String hobby,
-			int type, String remark) {
+			String email, Department department, Position position, String political_status, Date hiredate,
+			String hobby, int type, String remark) {
 		super();
 		this.id = id;
 		this.nickname = nickname;
@@ -119,19 +119,19 @@ public class User {
 		this.email = email;
 	}
 
-	public String getDepartment() {
+	public Department getDepartment() {
 		return department;
 	}
 
-	public void setDepartment(String department) {
+	public void setDepartment(Department department) {
 		this.department = department;
 	}
 
-	public String getPosition() {
+	public Position getPosition() {
 		return position;
 	}
 
-	public void setPosition(String position) {
+	public void setPosition(Position position) {
 		this.position = position;
 	}
 

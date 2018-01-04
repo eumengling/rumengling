@@ -9,6 +9,8 @@ public interface DepartmentDao {
 	//²¿ÃÅ
 	public List<Department> queryAllDepartments();
 	
+	public Department queryDepartmentById(int deptId);
+	
 	public int insertDepartment(Department dept);
 	
 	public int deleteDepartment(int id);

@@ -7,7 +7,7 @@ import com.iotek.ssm.entity.Salary;
 public interface SalaryDao {
 
 	//¹¤×Ê
-	public List<Salary> querySalaryByName(String nickname);
+	public List<Salary> querySalaryByNickname(String nickname);
 	
 	public int insertSalary(Salary salary);
 	
