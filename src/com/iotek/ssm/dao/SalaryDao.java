@@ -13,6 +13,4 @@ public interface SalaryDao {
 	
 	public int updateSalary(Salary salary);
 	
-	
-	
 }
