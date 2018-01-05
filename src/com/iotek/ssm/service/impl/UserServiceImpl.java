@@ -2,51 +2,51 @@ package com.iotek.ssm.service.impl;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.iotek.ssm.dao.UserDao;
 import com.iotek.ssm.entity.User;
 import com.iotek.ssm.service.UserService;
 
+@Service("userService")
 public class UserServiceImpl implements UserService{
-
-	@Override
+	
+	@Autowired
+	private UserDao userdao;
+	
 	public List<User> queryAllUsers() {
-		// TODO Auto-generated method stub
-		return null;
+		return userdao.queryAllUsers();
 	}
 
-	@Override
-	public int insertUser(User user, int deptId, int posId) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int insertUser(User user) {
+		/*Department dept = deptdao.queryDepartmentById(deptId);
+		user.setDepartment(dept);
+		Position pos = posdao.queryPositionById(posId);
+		user.setPosition(pos);
+		user.setHiredate(new Date());//入职时间
+		*/		
+		return userdao.insertUser(user);
 	}
 
-	@Override
 	public int deleteUser(int id) {
-		// TODO Auto-generated method stub
-		return 0;
+		return userdao.deleteUser(id);
 	}
 
-	@Override
 	public User queryUserById(int id) {
-		// TODO Auto-generated method stub
-		return null;
+		return userdao.queryUserById(id);
 	}
 
-	@Override
 	public int updateUser(User user) {
-		// TODO Auto-generated method stub
-		return 0;
+		return userdao.updateUser(user);
 	}
 
-	@Override
 	public List<User> queryUserByName(String name) {
-		// TODO Auto-generated method stub
-		return null;
+		return userdao.queryUserByName(name);
 	}
 
-	@Override
 	public User queryUserByNickname(String nickname) {
-		// TODO Auto-generated method stub
-		return null;
+		return userdao.queryUserByNickname(nickname);
 	}
 
 }

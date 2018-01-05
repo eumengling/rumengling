@@ -8,7 +8,7 @@ public interface UserService {
 
 	public List<User> queryAllUsers();
 	
-	public int insertUser(User user,int deptId,int posId);
+	public int insertUser(User user);
 	
 	public int deleteUser(int id);
 	
