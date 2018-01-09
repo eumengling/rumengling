@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+	<head>
+	<style type="text/css">
+	* {
+		padding:0 auto;
+		margin:0 auto;
+	 }
+	</style>
+	<style>
+		a{
+			text-decoration: none;
+			transition: color .2s;
+			cursor: auto;
+			-webkit-margin-before: 1em;
+			-webkit-margin-after: 1em;
+			-webkit-margin-start: 0px;
+			-webkit-margin-end: 0px;
+			font: 12px Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+		}
+	</style>
+		<style>
+			.nav-menu {
+				position: relative;
+				z-index: 200;
+				height: 42px;
+				color: #222;
+			}
+			.nav-menu .blur-bg {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-position: center -10px;
+				background-repeat: no-repeat;
+				background-image:url(http://i0.hdslb.com/bfs/archive/5d54c71eddc9f5229414369bba59eb7e552ef588.png@.webp);
+				filter:blur(4px);
+			}
+			.nav-menu .nav-mask {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: hsla(0,0%,100%,.4);
+				box-shadow: 0 1px 2px rgba(0,0,0,.1);
+				margin:0;
+				padding:0;
+				display: block;
+			}
+			.nav-menu .nav-con .nav-item {
+				float: left;
+				text-align: center;
+				line-height: 42px;
+				height: 42px;
+				position: relative;
+				background-color: hsla(0,0%,100%,0);
+				transition: all .3s;
+				margin:0;
+				padding:0;
+				display: block;
+			}
+			.nav-menu .nav-con .nav-item.home {
+				margin-left: -10px;
+				padding-left: 12px;
+			}
+			.nav-menu .nav-con .nav-item .t {
+				color: #222;
+				height: 100%;
+				display: block;
+				padding: 0 11px;
+			}
+			.head-banner {
+				position: relative;
+				z-index: 199;
+				height: 170px;
+				margin-top: -42px;
+				background: #eee;
+				background-position: center -10px;
+				background-repeat: no-repeat;
+				background-image: url(http://i0.hdslb.com/bfs/archive/5d54c71eddc9f5229414369bba59eb7e552ef588.png@.webp);
+			}
+		</style>
+		<style>
+			@media screen and (max-width: 1400px){
+				.bili-wrapper {
+					margin: 0 auto;
+					width: 980px;
+				}
+			}
+			.bili-header-m ul {
+				display: block;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+			}
+			a {
+				text-decoration:none;
+			}
+		</style>
+		<script>
+			function change1(){
+				document.getElementsByName("i-frame")[0].style.display="inline";
+			}
+			function change2(){
+				document.getElementsByName("i-frame")[0].style.display="none";
+			}
+		</script>
+	</head>
+	<body>
+		<div class="nav-menu">
+			<div class="blur-bg"></div>
+			<div class="nav-mask"></div>
+			<div class="bili-wrapper clearfix">
+				<div class="nav-con fl">
+					<ul type="none">
+						<li class="nav-item home">
+							<a href="" title="首页" class="t"><i class="bili-icon"></i>首页</a>
+						</li>
+						<li class="nav-item hbili">
+							<a href="" target="_blank" title="我的简历" class="t">我的简历</a>
+						</li>
+						<li class="nav-item game">
+							<a href="" target="_blank" title="哲♂学换衣间" class="t" onmousemove="change1()" onmouseout="change2()">哲♂学换衣间</a>
+							<div name="i-frame"  style="width: 680px; height: 260px; display: none;position: absolute;left: 0;top: 42px;">
+							<iframe src="http://imgsrc.baidu.com/forum/pic/item/1fb3881001e9390160ea76c67dec54e734d196cc.jpg" frameborder="0" width="100%" height="100%"></iframe>
+							</div>
+						</li>
+						<li class="nav-item live">
+							<a href="" target="_blank" title="个人信息" class="t">个人信息</a>
+						</li>
+						<li class="nav-item buy">
+							<a href="https://baike.baidu.com/item/bilibili/7056160?fr=aladdin&fromid=15978833&fromtitle=B%E7%AB%99" target="_blank" title="公司简介" class="t">公司简介</a>
+						</li>
+						<li class="nav-item zb">
+							<a href="" target="_blank" title="加入我们" class="t">加入我们</a>
+						</li>
+						<li class="nav-item mobile">
+							<a href="https://app.bilibili.com/" target="_blank" title="移动端" class="t">移动端</a>
+							<div class="app-orcode-box" style="display: none;"></div>
+						</li>
+						<li class="nav-item">
+						<a href="" target="_blank" title="消息" class="t"><!----><!---->消息</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="head-banner">
+				<a target="_blank" class="banner-link"></a>
+		</div>
+	</body>
+</html>
