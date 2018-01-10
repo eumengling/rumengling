@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			@media screen and (max-width: 1400px){
+				.bili-wrapper {
+					margin: 0 auto;
+					width: 980px;
+				}
+			}
+		</style>
+		<style type="text/css">
+		* {
+			padding:0 auto;
+			margin:0 auto;
+		 }
+		</style>
+		<style>
+			div{
+			    display: block;
+			}
+			span{
+				margin: 0px;
+				padding: 0px;
+			}
+			form{
+				margin: 0px;
+				padding: 0px;
+				color: rgb(113, 113, 113);
+				display: block;
+			}
+			input{
+				cursor:auto;
+				width: 388px;
+				border: 1px solid rgb(221, 221, 221);
+				color: rgb(170, 170, 170);
+				font-size: 14px;
+				padding: 10px;
+				height: 18px;
+				vertical-align: middle;
+				border-radius: 4px;
+				font-style: normal;
+				font-variant: normal;
+				font-weight: normal;
+				font-stretch: normal;
+				line-height: normal;
+				font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+			}
+			p{
+				margin: 0px;
+				padding: 0px;
+				display: block;
+				-webkit-margin-before: 1em;
+				-webkit-margin-after: 1em;
+				-webkit-margin-start: 0px;
+				-webkit-margin-end: 0px;
+			}
+			a{
+				font-size: 12px;
+				outline: 0px;
+				color: rgb(0, 161, 214);
+				margin: 0px;
+				padding: 0px;
+				text-decoration: none;
+				cursor: pointer;
+			}
+		</style>
+		<style>
+			.top-banner {
+				background: #00a0d8;
+				height: 86px;
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			.title-line {
+				width: 980px;
+				height: 28px;
+				margin: 0px auto 28px;
+				border-bottom: 1px solid rgb(221, 221, 221);
+				text-align: center;
+			}
+			.title-line .tit{
+				height: 56px;
+				line-height: 56px;
+				margin: 0px auto;
+				padding: 0px 20px;
+				background: rgb(255, 255, 255);
+				text-align: center;
+			}
+			.center_div{
+				margin-top: 40px;
+				width: 415px;
+				height: 42px;
+				margin: 0px auto;
+				border-radius: 3px;
+				position: relative;
+				text-align: center;
+			}
+			.yzm_x{
+				color: rgb(244, 93, 144);
+				position: absolute;
+				right: -20px;
+				top: 2px;
+				transform: translate3d(100%, 0px, 0px);
+				font-size: 12px;
+			}
+			.register-hidden-gruop{
+				width: 415px;
+				height: 40px;
+				margin: 0px auto;
+			}
+			.next_setp{
+				cursor: pointer;
+				font-size: 14px;
+				display: block;
+				margin: 0px auto;
+			}
+			.ys-a{
+				color: rgb(170, 170, 170);
+			}
+			.register-hidden-gruop{
+				line-height: 40px;
+				text-align: right;
+				width: 415px;
+				height: 40px;
+				margin: 0px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top-banner">
+			<img src="http://s1.hdslb.com/bfs/static/passport/static/img/rl_top.35edfde.png">
+		</div>
+		<div class="title-line">
+			<span class="tit" style="font-size: 38px;">修改密码</span>
+		</div>
+		<div class="register-container">
+			<form id="registerForm" method="post" onsubmit="return false">
+				<div class="register-hidden-gruop"></div>
+				<div class="center_div">
+					<input type="password" name="userpwd" placeholder="密码(6-16个字符组成，区分大小写)" class="user_id_password" style="background-color:#FAFFBD !important;box-shadow:none;">
+					<p class="yzm_x">密码不能大于16个字符</p>
+				</div>
+				<div class="register-hidden-gruop"></div>
+				<div class="register-hidden-gruop">
+					<input type="submit" value="保存" class="next_step center_div ys-a" style="pointer-events: auto;">
+				</div>
+				<div class="register-hidden-gruop">
+					<a href="">返回···></a>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

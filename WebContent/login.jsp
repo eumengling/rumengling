@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>登陆</title>
 <style>
 @media screen and (max-width: 1400px) {
@@ -184,7 +184,7 @@
 				float: right;
 				padding-right: 70px;
 				margin: 58px auto 0px 50%;
-				top: 20px;
+				top: 10px;
 			}
 		</style>
 	</head>
@@ -214,7 +214,6 @@
 							<a class="btn-login" style="pointer-events: auto;">登陆</a>
 							<a class="btn-reg" href="">注册</a>
 						</li>
-						<li class=""></li>
 					</ul>
 				</div>
 			</div>
