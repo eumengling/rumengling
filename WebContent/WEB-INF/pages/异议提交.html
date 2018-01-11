@@ -47,6 +47,24 @@
 				font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
 				text-align: center;
 			}
+			input{
+				cursor:auto;
+				width: 200px;
+				border: 1px solid rgb(221, 221, 221);
+				color: rgb(170, 170, 170);
+				font-size: 14px;
+				padding: 0px;
+				height: 20px;
+				vertical-align: middle;
+				border-radius: 4px;
+				font-style: normal;
+				font-variant: normal;
+				font-weight: normal;
+				font-stretch: normal;
+				line-height: normal;
+				font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+				text-align: center;
+			}
 			p{
 				margin: 0px;
 				padding: 0px;
@@ -118,6 +136,10 @@
 			}
 			.ys-a{
 				color: rgb(170, 170, 170);
+				-webkit-margin-before: 0px;
+				-webkit-margin-after: 0px;
+				-webkit-margin-start: 119px;
+				-webkit-margin-end: 0px;
 			}
 			.register-hidden-gruop{
 				line-height: 40px;
@@ -133,34 +155,28 @@
 			<img src="http://s1.hdslb.com/bfs/static/passport/static/img/rl_top.35edfde.png">
 		</div>
 		<div class="title-line">
-			<span class="tit" style="font-size: 38px;">招聘信息</span>
+			<span class="tit" style="font-size: 38px;">异议</span>
 		</div>
 		<div class="register-container">
 			<table border="1" cellspacing="0" cellpadding="10">
 				<tr>
-					<td>ID</td>
-					<td>职位</td>
-					<td>工作地址</td>
-					<td>协议方式</td>
-					<td>职位描述</td>
-					<td>职位要求</td>
+					<td>员工编号</td>
+					<td>姓名</td>
+					<td>表单编号</td>
+					<td>原因</td>
 					<td></td>
 				</tr>
-				<c:forEach items="${requestScope.}" var="">
 				<tr>
-					<td>${}</td>
-					<td>${}</td>
-					<td>${}</td>
-					<td>${}</td>
-					<td>${}</td>
-					<td>${}</td>
-					<td><a herf="" id="">我想应聘</a></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><a href="" id="${}">提交</a></td>
 				</tr>
-				</c:forEach>
 			</table>
-		</div>
-		<div class="register-hidden-gruop">
-			<a href="游客页.html">返回主页-></a>
+			<div class="register-hidden-gruop">
+				<a href="员工页.html">首页-></a>
+			</div>
 		</div>
 	</body>
 </html>

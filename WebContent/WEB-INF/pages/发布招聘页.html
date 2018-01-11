@@ -47,6 +47,24 @@
 				font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
 				text-align: center;
 			}
+			input{
+				cursor:auto;
+				width: 120px;
+				border: 1px solid rgb(221, 221, 221);
+				color: rgb(170, 170, 170);
+				font-size: 14px;
+				padding: 0px;
+				height: 20px;
+				vertical-align: middle;
+				border-radius: 4px;
+				font-style: normal;
+				font-variant: normal;
+				font-weight: normal;
+				font-stretch: normal;
+				line-height: normal;
+				font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+				text-align: center;
+			}
 			p{
 				margin: 0px;
 				padding: 0px;
@@ -138,7 +156,7 @@
 		<div class="register-container">
 			<table border="1" cellspacing="0" cellpadding="10">
 				<tr>
-					<td>ID</td>
+					<td>编号</td>
 					<td>职位</td>
 					<td>工作地址</td>
 					<td>协议方式</td>
@@ -155,14 +173,24 @@
 					<td>${}</td>
 					<td>${}</td>
 					<td>${}</td>
-					<td><a href="">编辑</a></td>
+					<td><a href="修改招聘.html">编辑</a></td>
 					<td><a href="" id="${}" name="delete">删除</a></td>
 				</tr>
 				</c:forEach>
+				<tr>
+					<td></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><a href="" id="${}">添加</a></td>
+					<td></td>
+				</tr>
 			</table>
 		</div>
 		<div class="register-hidden-gruop">
-			<a href="新的招聘页.html">新的招聘···></a>
+			<a href="管理主页.html">首页-></a>
 		</div>
 	</body>
 </html>
