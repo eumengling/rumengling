@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Salary {
 
-	private int id;//工资
+	private int salary_id;//工资
 	private int user_id;
 	private double wages;//总工资
 	private double base_pay;//基本工资
@@ -12,16 +12,18 @@ public class Salary {
 	private double overtime_pay;//加班工资
 	private double bonus;//奖金
 	private double social_security;//社保
+	private double amount;//金额
+	private String reason;//原因
 	private Date time;
 	
 	public Salary() {
 		super();
 	}
 
-	public Salary(int id, int user_id, double wages, double base_pay, double merit_pay, double overtime_pay,
-			double bonus, double social_security, Date time) {
+	public Salary(int salary_id, int user_id, double wages, double base_pay, double merit_pay, double overtime_pay,
+			double bonus, double social_security, double amount, String reason, Date time) {
 		super();
-		this.id = id;
+		this.salary_id = salary_id;
 		this.user_id = user_id;
 		this.wages = wages;
 		this.base_pay = base_pay;
@@ -29,15 +31,17 @@ public class Salary {
 		this.overtime_pay = overtime_pay;
 		this.bonus = bonus;
 		this.social_security = social_security;
+		this.amount = amount;
+		this.reason = reason;
 		this.time = time;
 	}
 
-	public int getId() {
-		return id;
+	public int getSalary_id() {
+		return salary_id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setSalary_id(int salary_id) {
+		this.salary_id = salary_id;
 	}
 
 	public int getUser_id() {
@@ -96,6 +100,22 @@ public class Salary {
 		this.social_security = social_security;
 	}
 
+	public double getAmount() {
+		return amount;
+	}
+
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+
+	public String getReason() {
+		return reason;
+	}
+
+	public void setReason(String reason) {
+		this.reason = reason;
+	}
+
 	public Date getTime() {
 		return time;
 	}
@@ -105,9 +125,10 @@ public class Salary {
 	}
 
 	public String toString() {
-		return "Salary [id=" + id + ", user_id=" + user_id + ", wages=" + wages + ", base_pay=" + base_pay
+		return "Salary [salary_id=" + salary_id + ", user_id=" + user_id + ", wages=" + wages + ", base_pay=" + base_pay
 				+ ", merit_pay=" + merit_pay + ", overtime_pay=" + overtime_pay + ", bonus=" + bonus
-				+ ", social_security=" + social_security + ", time=" + time + "]";
+				+ ", social_security=" + social_security + ", amount=" + amount + ", reason=" + reason + ", time="
+				+ time + "]";
 	}
 	
 }

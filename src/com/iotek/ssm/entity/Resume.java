@@ -2,7 +2,7 @@ package com.iotek.ssm.entity;
 
 public class Resume {
 	
-	private int id;//简历
+	private int resume_id;//简历
 	private int user_id;
 	private String name;
 	private String sex;
@@ -10,8 +10,8 @@ public class Resume {
 	private String degree;//学位
 	private String tel;
 	private String email;
-	private String department;//部门
-	private String position;//职位
+	private Department department;//部门
+	private Position position;//职位
 	private String salary_expectation;//期望薪资
 	private String work_experience;//工作经验
 	private String previous_job;//上一份工作
@@ -22,11 +22,11 @@ public class Resume {
 		super();
 	}
 
-	public Resume(int id, int user_id, String name, String sex, int age, String degree, String tel, String email,
-			String department, String position, String salary_expectation, String work_experience, String previous_job,
-			String political_status, String hobby) {
+	public Resume(int resume_id, int user_id, String name, String sex, int age, String degree, String tel, String email,
+			Department department, Position position, String salary_expectation, String work_experience,
+			String previous_job, String political_status, String hobby) {
 		super();
-		this.id = id;
+		this.resume_id = resume_id;
 		this.user_id = user_id;
 		this.name = name;
 		this.sex = sex;
@@ -43,12 +43,12 @@ public class Resume {
 		this.hobby = hobby;
 	}
 
-	public int getId() {
-		return id;
+	public int getResume_id() {
+		return resume_id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setResume_id(int resume_id) {
+		this.resume_id = resume_id;
 	}
 
 	public int getUser_id() {
@@ -107,19 +107,19 @@ public class Resume {
 		this.email = email;
 	}
 
-	public String getDepartment() {
+	public Department getDepartment() {
 		return department;
 	}
 
-	public void setDepartment(String department) {
+	public void setDepartment(Department department) {
 		this.department = department;
 	}
 
-	public String getPosition() {
+	public Position getPosition() {
 		return position;
 	}
 
-	public void setPosition(String position) {
+	public void setPosition(Position position) {
 		this.position = position;
 	}
 
@@ -164,8 +164,8 @@ public class Resume {
 	}
 
 	public String toString() {
-		return "Resume [id=" + id + ", user_id=" + user_id + ", name=" + name + ", sex=" + sex + ", age=" + age
-				+ ", degree=" + degree + ", tel=" + tel + ", email=" + email + ", department=" + department
+		return "Resume [resume_id=" + resume_id + ", user_id=" + user_id + ", name=" + name + ", sex=" + sex + ", age="
+				+ age + ", degree=" + degree + ", tel=" + tel + ", email=" + email + ", department=" + department
 				+ ", position=" + position + ", salary_expectation=" + salary_expectation + ", work_experience="
 				+ work_experience + ", previous_job=" + previous_job + ", political_status=" + political_status
 				+ ", hobby=" + hobby + "]";

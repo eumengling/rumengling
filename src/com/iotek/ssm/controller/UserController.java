@@ -10,7 +10,6 @@ import com.iotek.ssm.service.OppositionService;
 import com.iotek.ssm.service.PositionService;
 import com.iotek.ssm.service.RecruitService;
 import com.iotek.ssm.service.ResumeService;
-import com.iotek.ssm.service.RewardService;
 import com.iotek.ssm.service.SalaryService;
 import com.iotek.ssm.service.TrainingService;
 import com.iotek.ssm.service.UserService;
@@ -31,8 +30,6 @@ public class UserController {
 	private SalaryService salaryService;
 	@Autowired
 	private OppositionService oppService;
-	@Autowired
-	private RewardService rewardService;
 	@Autowired
 	private RecruitService recruitService;
 	@Autowired

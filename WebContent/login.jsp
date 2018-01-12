@@ -187,6 +187,12 @@
 				top: 10px;
 			}
 		</style>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.7.2.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+			})
+		</script>
 	</head>
 	<body>
 	<div>
@@ -211,7 +217,7 @@
 							<div class="text"><p class="tips"></p></div>
 						</li>
 						<li class="btn-box">
-							<a class="btn-login" style="pointer-events: auto;">登陆</a>
+							<a class="btn-login" style="pointer-events:auto;" href="">登陆</a>
 							<a class="btn-reg" href="">注册</a>
 						</li>
 					</ul>

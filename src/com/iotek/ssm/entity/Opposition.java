@@ -1,23 +1,21 @@
 package com.iotek.ssm.entity;
 
-import java.util.Date;
-
 public class Opposition {
 	
 	private int id;//异议工资表
 	private int user_id;
-	private Date salary_time;//有问题的工资月份
+	private int reward_id;//有问题的工资表编号
 	private String remark;//原因
 	
 	public Opposition() {
 		super();
 	}
 
-	public Opposition(int id, int user_id, Date salary_time, String remark) {
+	public Opposition(int id, int user_id, int reward_id, String remark) {
 		super();
 		this.id = id;
 		this.user_id = user_id;
-		this.salary_time = salary_time;
+		this.reward_id = reward_id;
 		this.remark = remark;
 	}
 
@@ -37,12 +35,12 @@ public class Opposition {
 		this.user_id = user_id;
 	}
 
-	public Date getSalary_time() {
-		return salary_time;
+	public int getReward_id() {
+		return reward_id;
 	}
 
-	public void setSalary_time(Date salary_time) {
-		this.salary_time = salary_time;
+	public void setReward_id(int reward_id) {
+		this.reward_id = reward_id;
 	}
 
 	public String getRemark() {
@@ -54,7 +52,7 @@ public class Opposition {
 	}
 
 	public String toString() {
-		return "Opposition [id=" + id + ", user_id=" + user_id + ", salary_time=" + salary_time + ", remark=" + remark
+		return "Opposition [id=" + id + ", user_id=" + user_id + ", reward_id=" + reward_id + ", remark=" + remark
 				+ "]";
 	}
 	

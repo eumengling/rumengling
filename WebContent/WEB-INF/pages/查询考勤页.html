@@ -29,7 +29,7 @@
 				color: rgb(113, 113, 113);
 				display: block;
 			}
-			td{
+			input{
 				cursor:auto;
 				width: 388px;
 				border: 1px solid rgb(221, 221, 221);
@@ -45,25 +45,6 @@
 				font-stretch: normal;
 				line-height: normal;
 				font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
-				text-align: center;
-			}
-			input{
-				cursor:auto;
-				width: 50px;
-				border: 1px solid rgb(221, 221, 221);
-				color: rgb(170, 170, 170);
-				font-size: 14px;
-				padding: 0px;
-				height: 20px;
-				vertical-align: middle;
-				border-radius: 4px;
-				font-style: normal;
-				font-variant: normal;
-				font-weight: normal;
-				font-stretch: normal;
-				line-height: normal;
-				font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
-				text-align: center;
 			}
 			p{
 				margin: 0px;
@@ -136,10 +117,6 @@
 			}
 			.ys-a{
 				color: rgb(170, 170, 170);
-				-webkit-margin-before: 50px;
-				-webkit-margin-after: 0px;
-				-webkit-margin-start: 0px;
-				-webkit-margin-end: 0px;
 			}
 			.register-hidden-gruop{
 				line-height: 40px;
@@ -155,52 +132,22 @@
 			<img src="http://s1.hdslb.com/bfs/static/passport/static/img/rl_top.35edfde.png">
 		</div>
 		<div class="title-line">
-			<span class="tit" style="font-size: 38px;">简历</span>
+			<span class="tit" style="font-size: 38px;">考勤查询</span>
 		</div>
 		<div class="register-container">
-		<c:forEach items="${}" var="">
-			<table border="1" cellspacing="0" cellpadding="10">
-				<tr>
-					<td>姓名:</td>
-					<td>${}</td>
-					<td>性别:</td>
-					<td>${}</td>
-				</tr>
-				<tr>
-					<td>年龄:</td>
-					<td>${}</td>
-					<td>学历:</td>
-					<td>${}</td>
-				</tr>
-				<tr>
-					<td>联系方式:</td>
-					<td>${}</td>
-					<td>e-mail:</td>
-					<td>${}</td>
-				</tr>
-				<tr>
-					<td>应聘职位:</td>
-					<td>${}</td>
-					<td>政治面貌:</td>
-					<td>${}</td>
-				</tr>
-				<tr>
-					<td>上份工作:</td>
-					<td>${}</td>
-					<td>工作经验:</td>
-					<td>${}</td>
-				</tr>
-				<tr>
-					<td>期望薪资:</td>
-					<td>${}</td>
-					<td>兴趣爱好:</td>
-					<td>${}</td>
-				</tr>
-			</table>
-		</c:forEach>
-		<div class="register-hidden-gruop">
-			<input type="submit" value="录用" class="next_step center_div ys-a" style="pointer-events:auto;">
-		</div>
+			<form id="registerForm" method="post" onsubmit="return false">
+				<div class="register-hidden-gruop"></div>
+				<div class="center_div">
+					<input type="text" name="user_id" placeholder="请输入员工编号" class="user_id_password" style="background-color:#FAFFBD !important;box-shadow:none;">
+				</div>
+				<div class="register-hidden-gruop"></div>
+				<div class="register-hidden-gruop">
+					<a href="考勤表.html" id="">查询-></a>
+				</div>
+				<div class="register-hidden-gruop">
+					<a href="管理主页.html">返回-></a>
+				</div>
+			</form>
 		</div>
 	</body>
 </html>

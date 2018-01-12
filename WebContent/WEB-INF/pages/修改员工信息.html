@@ -136,9 +136,9 @@
 			}
 			.ys-a{
 				color: rgb(170, 170, 170);
-				-webkit-margin-before: 50px;
+				-webkit-margin-before: 0px;
 				-webkit-margin-after: 0px;
-				-webkit-margin-start: 0px;
+				-webkit-margin-start: 119px;
 				-webkit-margin-end: 0px;
 			}
 			.register-hidden-gruop{
@@ -155,52 +155,64 @@
 			<img src="http://s1.hdslb.com/bfs/static/passport/static/img/rl_top.35edfde.png">
 		</div>
 		<div class="title-line">
-			<span class="tit" style="font-size: 38px;">简历</span>
+			<span class="tit" style="font-size: 38px;">员工信息</span>
 		</div>
 		<div class="register-container">
-		<c:forEach items="${}" var="">
 			<table border="1" cellspacing="0" cellpadding="10">
 				<tr>
-					<td>姓名:</td>
-					<td>${}</td>
-					<td>性别:</td>
-					<td>${}</td>
+					<td>员工编号</td>
+					<td>昵称</td>
+					<td>姓名</td>
+					<td>性别</td>
+					<td>年龄</td>
+					<td>学位</td>
+					<td>联系方式</td>
+					<td>E-mail</td>
+					<td>部门</td>
+					<td>职位</td>
+					<td>政治面貌</td>
+					<td>在职状态</td>
+					<td>离职备注</td>
+					<td></td>
 				</tr>
+				<c:forEach items="${requestScope.}" var="">
 				<tr>
-					<td>年龄:</td>
 					<td>${}</td>
-					<td>学历:</td>
 					<td>${}</td>
+					<td>${}</td>
+					<td>${}</td>
+					<td>${}</td>
+					<td>${}</td>
+					<td>${}</td>
+					<td>${}</td>
+					<td>${}</td>
+					<td>${}</td>
+					<td>${}</td>
+					<td>${}</td>
+					<td>${}</td>
+					<td></td>
 				</tr>
+				</c:forEach>
 				<tr>
-					<td>联系方式:</td>
-					<td>${}</td>
-					<td>e-mail:</td>
-					<td>${}</td>
-				</tr>
-				<tr>
-					<td>应聘职位:</td>
-					<td>${}</td>
-					<td>政治面貌:</td>
-					<td>${}</td>
-				</tr>
-				<tr>
-					<td>上份工作:</td>
-					<td>${}</td>
-					<td>工作经验:</td>
-					<td>${}</td>
-				</tr>
-				<tr>
-					<td>期望薪资:</td>
-					<td>${}</td>
-					<td>兴趣爱好:</td>
-					<td>${}</td>
+					<td></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><input type="text"></td>
+					<td><a href="" id="${}">保存</a></td>
 				</tr>
 			</table>
-		</c:forEach>
-		<div class="register-hidden-gruop">
-			<input type="submit" value="录用" class="next_step center_div ys-a" style="pointer-events:auto;">
-		</div>
+			<div class="register-hidden-gruop">
+				<a href="管理主页.html">首页-></a>
+			</div>
 		</div>
 	</body>
 </html>

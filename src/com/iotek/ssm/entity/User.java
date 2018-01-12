@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class User {
 
-	private int id;//用户
+	private int user_id;//用户
 	private String nickname;//昵称
 	private String name;
 	private String password;
@@ -25,11 +25,11 @@ public class User {
 		super();
 	}
 
-	public User(int id, String nickname, String name, String password, String sex, int age, String degree, String tel,
-			String email, Department department, Position position, String political_status, Date hiredate,
+	public User(int user_id, String nickname, String name, String password, String sex, int age, String degree,
+			String tel, String email, Department department, Position position, String political_status, Date hiredate,
 			String hobby, int type, String remark) {
 		super();
-		this.id = id;
+		this.user_id = user_id;
 		this.nickname = nickname;
 		this.name = name;
 		this.password = password;
@@ -47,12 +47,12 @@ public class User {
 		this.remark = remark;
 	}
 
-	public int getId() {
-		return id;
+	public int getUser_id() {
+		return user_id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setUser_id(int user_id) {
+		this.user_id = user_id;
 	}
 
 	public String getNickname() {
@@ -176,10 +176,10 @@ public class User {
 	}
 
 	public String toString() {
-		return "User [id=" + id + ", nickname=" + nickname + ", name=" + name + ", password=" + password + ", sex="
-				+ sex + ", age=" + age + ", degree=" + degree + ", tel=" + tel + ", email=" + email + ", department="
-				+ department + ", position=" + position + ", political_status=" + political_status + ", hiredate="
-				+ hiredate + ", hobby=" + hobby + ", type=" + type + ", remark=" + remark + "]";
+		return "User [user_id=" + user_id + ", nickname=" + nickname + ", name=" + name + ", password=" + password
+				+ ", sex=" + sex + ", age=" + age + ", degree=" + degree + ", tel=" + tel + ", email=" + email
+				+ ", department=" + department + ", position=" + position + ", political_status=" + political_status
+				+ ", hiredate=" + hiredate + ", hobby=" + hobby + ", type=" + type + ", remark=" + remark + "]";
 	}
 	
 }
